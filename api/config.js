@@ -1,12 +1,16 @@
 let environments = {
 	staging: {
-		'port': 3000,
-		'envName': 'staging'
+		'httpPort': 3000,
+		'httpsPort': 3001,
+		'envName': 'staging',
+		'hashingSecret' : 'thisisasecret'
 	},
 
 	production: {
-		'port': 5000,
-		'envName': 'production'
+		'httpPort': 5000,
+		'httpsPort': 5001,
+		'envName': 'production',
+		'hashingSecret': 'thisisalsoasecret'
 	}
 };
 //get the current environment
